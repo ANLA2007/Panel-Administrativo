@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <h1 class="logo">AdminPanel</h1>
+        <div class="user-info">
+            <span class="user-name">Juan Pérez</span>
+            <div class="user-avatar">JP</div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="usuario.html" class="nav-link">
+                        <span class="nav-icon">👥</span>
+                        <span class="nav-text">Usuarios</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="producto.html" class="nav-link">
+                        <span class="nav-icon">📦</span>
+                        <span class="nav-text">Producto</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="venta.html" class="nav-link">
+                        <span class="nav-icon">🛍️</span>
+                        <span class="nav-text">Ventas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="configuracion.html" class="nav-link active">
+                        <span class="nav-icon">⚙️</span>
+                        <span class="nav-text">Configuración</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="reportes.html" class="nav-link">
+                        <span class="nav-icon">📈</span>
+                        <span class="nav-text">Reportes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+   
+    <main class="main-content">
+        <div class="config-page">
+
+            <div class="content-header">
+                <h2>Configuración</h2>
+                <p>Ajustes del sistema</p>
+            </div>
+
+            <div class="form-box">
+                <h3>Datos del sistema</h3>
+                <label>Nombre del sistema</label>
+                <input type="text" value="Sistema Admin">
+
+                <label>Administrador</label>
+                <input type="text" value="Juan Pérez">
+
+                <label>Correo del sistema</label>
+                <input type="email" value="admin@sistema.com">
+
+                <label>Idioma</label>
+                <input type="text" value="Español">
+
+                <button>Guardar cambios</button>
+            </div>
+
+            <div class="form-box">
+                <h3>Seguridad</h3>
+                <label>Cambiar contraseña</label>
+                <input type="password" placeholder="Nueva contraseña">
+
+                <label>Confirmar contraseña</label>
+                <input type="password" placeholder="Confirmar">
+
+                <button>Actualizar</button>
+            </div>
+
+            <div class="form-box">
+                <h3>Apariencia</h3>
+                <label>Modo oscuro</label>
+                <button class="btn-dark">🌙 Activar modo oscuro</button>
+
+                <label>Tamaño de letra</label>
+                <input type="text" value="Mediano">
+            </div>
+
+            <div class="form-box">
+                <h3>Sistema</h3>
+                <label>Notificaciones</label>
+                <input type="text" value="Activadas">
+
+                <label>Estado del sistema</label>
+                <input type="text" value="Activo">
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>
