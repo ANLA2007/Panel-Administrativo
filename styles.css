@@ -144,7 +144,7 @@ header {
     font-size: 1.2rem;
 }
 
-/*CONTENIDO PRINCIPAL*/
+
 .main-content{
     margin-left: 250px;
     flex: 1;
@@ -155,7 +155,7 @@ header {
     margin-bottom: var(--spacing-lg);
 }
 
-/*  cards */
+/*  cards dashboard*/
 .stats-section {
     display: flex;
     justify-content: center;
@@ -169,7 +169,7 @@ header {
     justify-content: center;
 }
 
-/* diseño de las cards */
+
 .stat-card {
     background-color: var(--bg-primary);
     padding: var(--spacing-md);
@@ -196,13 +196,32 @@ header {
     color: var(--text-secondary);
 }
 
- <!--diseño para usuario>
-.form-box {
-    border: 2px solid #4CAF50;
-    padding: 10px;
-    margin-bottom: 15px;
+.ventas,
+.productos {
+    margin-top: 20px;
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 500px;
 }
 
+.ventas h3,
+.productos h3 {
+    margin: 8px 0 6px;
+    font-size: 17px;
+    color: #333;
+}
+
+.ventas p,
+.productos p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+<!--tabla usuario y ventas  >
 .form-box input {
     border: 1px solid #2196F3;
     padding: 5px;
@@ -215,6 +234,7 @@ header {
     padding: 5px 10px;
     cursor: pointer;
 }
+
 
 .table {
     width: 100%;
@@ -233,3 +253,141 @@ header {
 .table th {
     color: #2196F3;
 }
+
+<!--producto card >
+
+.productos-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 10px;
+}
+.product-card {
+    width: 180px;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h3 {
+    color: #222;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product-info p {
+    color: #555;
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.product-info span {
+    color: #2c3e50;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.btn-add {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: none;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+
+.btn-add:hover {
+    background: #3498db;
+}
+<!--configuracion>
+
+.config-page {
+    margin-top: 70px; 
+    margin-left: 250px; 
+    padding: 20px;
+    background: #f5f7fa;
+    min-height: calc(100vh - 70px);
+}
+
+.config-page .content-header {
+    margin-bottom: 20px;
+}
+
+.config-page .content-header h2 {
+    font-size: 24px;
+    color: #1f2d3d;
+}
+
+.config-page .content-header p {
+    color: #6b7b8c;
+}
+
+.config-page .form-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.config-page .form-box label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.config-page .form-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.config-page .form-box input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.config-page .form-box button {
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
