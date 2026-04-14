@@ -43,7 +43,7 @@
 }
 body{
 
-    front-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: var(--bg-secondary);
     color:var(--text-primary);
     line-height: 1.6;
@@ -135,6 +135,14 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateX(10px);
 }
+.nav-link.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.nav-icon{
+    margin-right:  var(--secondary-color);
+    font-size: 1.2rem;
+}
 
 /*CONTENIDO PRINCIPAL*/
 .main-content{
@@ -145,4 +153,83 @@ header {
 
 .content-header{
     margin-bottom: var(--spacing-lg);
+}
+
+/*  cards */
+.stats-section {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+/* diseño de las cards */
+.stat-card {
+    background-color: var(--bg-primary);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+
+.stat-icon {
+    font-size: 2rem;
+}
+
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+}
+
+ <!--diseño para usuario>
+.form-box {
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form-box input {
+    border: 1px solid #2196F3;
+    padding: 5px;
+}
+
+
+.form-box button {
+    border: 1px solid #000;
+    background: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+
+
+.table th,
+.table td {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+
+.table th {
+    color: #2196F3;
 }
